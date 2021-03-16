@@ -1,0 +1,52 @@
+<view class="Container">
+  <!--轮播图-->
+ <swiper class="swiper"
+    indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}"
+    interval="{{interval}}"
+    duration="{{duration}}"
+    circular="{{circular}}"
+    indicator-active-color="#ff0099"
+ >
+ <block wx:for="{{imgurl}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item}}" style="width:100%" mode="widthFix"></image>
+    </swiper-item>
+ </block>
+ </swiper>
+ <!--轮播图-END-->
+  <!--图标导航-->
+<view class='navBox'>
+    <view class='navBtn' wx:for="{{navBtn}}" wx:key="index">
+      <navigator url="{{item.url}}" hover-class='none' >
+        <image class='navImg' src='{{item.icon}}' style='background:{{item.bgc}}'></image>
+       <view class='navName'>{{item.name}}</view>
+      </navigator>
+    </view>
+</view>
+  <!--图标导航-END-->
+ <!--校园头条-->
+<view class="news">
+  <text class='swiper-notice left'>校园头条：</text>
+  <swiper class='swiper right' vertical="true" autoplay="true" circular="true">
+    <block wx:for='{{msgList}}' wx:key="index">
+     <navigator url='' open-type="switchTab">
+        <swiper-item>
+         <view class='swiper-item'>{{item}}</view>
+        </swiper-item>
+      </navigator>
+    </block>
+  </swiper>
+</view>
+ <!--校园头条-END-->
+
+<!-- 超可爱的-->
+  <view>
+      <navigator url="/pages/test/index">aa
+        <view class="">1</view>
+        <view class="">2</view>
+        <view class="">3</view>
+      </navigator>
+  </view>
+ <!--超可爱的-END--> 
+</view>
