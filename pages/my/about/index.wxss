@@ -1,0 +1,77 @@
+page {
+  width: 100%;
+  height: 100%;
+}
+.view_contain {
+  width: 100%;
+  height: 100%;
+  background: #f8f8f8
+}
+/* 第一部分 */
+.view_1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 18%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  background: #c3d6ff;
+}
+.view_image_text {
+  width: 100%;
+  display: flex;
+  font-size: 35rpx;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.image_radius {
+  height: 160rpx;
+  width: 160rpx;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+/* 第二部分 */
+.view_2 {
+  width: 100%;
+  height: 8%;
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 40rpx;
+  background: white;
+}
+.image_tupian {
+  display: flex;
+  width: 60rpx;
+  height: 60rpx;
+}
+.line {
+  width: 100%;
+  height: 1rpx;
+  background: rgba(199, 199, 199, 0.56);
+}
+/* 第三部分 */
+.view_3 {
+  width: 100%;
+  font-size: 30rpx;
+  background: white;
+}
+.view_3_text{
+  width:92%;
+  margin: 3rpx auto;
+}
+.view_3_text view{
+  padding:10rpx 0;
+}
+.view_4{
+  width: 100%;
+  height: 6%;
+  font-size: 25rpx;
+  margin-top: 60rpx;
+  text-align: center;
+}
+
+

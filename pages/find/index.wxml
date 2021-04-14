@@ -11,16 +11,16 @@
 			<!-- 下方浏览等数据 -->
 			<view class="card-bottom">
 				<view>
-					<image src="/pages/images/home.png"></image>
-					<text>1234</text>
+					<image src="/pages/images/ll.png"></image>
+					<text>1314</text>
 				</view>
 				<view>
-					<image src="/pages/images/home.png"></image>
-					<text>50</text>
+					<image src="/pages/images/dz.png"></image>
+					<text>520</text>
 				</view>
 				<view>
-					<image src="/pages/images/my.png"></image>
-					<text>670</text>
+					<image src="/pages/images/zf.png"></image>
+					<text>888</text>
 				</view>
 			</view>
     </view>

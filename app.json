@@ -1,9 +1,17 @@
 {
-  "pages": [
+  "pages": [ 
     "pages/index/index",
     "pages/find/index",
     "pages/my/index",
-    "pages/test/index"
+    "pages/my/info/index",
+    "pages/my/about/index",
+    "pages/my/suggest/index",
+    "pages/my/setup/index",
+    "pages/find/xxgk/index",
+    "pages/find/jxdw/index",
+    "pages/login/index",
+    "pages/shiwu/index",
+    "pages/find/jwglxt/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -36,5 +44,5 @@
       }
     ]
   },
-  "sitemapLocation": "sitemap78.json"
+  "sitemapLocation": "sitemap.json"
 }

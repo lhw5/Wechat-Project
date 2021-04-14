@@ -27,10 +27,11 @@
   <!--图标导航-END-->
  <!--校园头条-->
 <view class="news">
-  <text class='swiper-notice left'>校园头条：</text>
+  <image  class="gg" src="/pages/images/gg.png"></image>
+  <text class='swiper-notice left'>头条 :</text>
   <swiper class='swiper right' vertical="true" autoplay="true" circular="true">
     <block wx:for='{{msgList}}' wx:key="index">
-     <navigator url='' open-type="switchTab">
+     <navigator url='/pages/test/index'>
         <swiper-item>
          <view class='swiper-item'>{{item}}</view>
         </swiper-item>
@@ -40,13 +41,25 @@
 </view>
  <!--校园头条-END-->
 
-<!-- 超可爱的-->
-  <view>
-      <navigator url="/pages/test/index">aa
-        <view class="">1</view>
-        <view class="">2</view>
-        <view class="">3</view>
+<!-- 卡片-->
+<view class="h">❤精选推荐❤</view>
+<view class='content-box'>
+    <view class='content' wx:for="{{content}}" wx:key="index">
+      <navigator url="{{item.url}}" hover-class='hover_class' >
+        <view class='conName conImg' 
+          style='background:{{item.bgc}} no-repeat; background-size: 140rpx 100rpx;'>
+          {{item.name}}
+        </view>
       </navigator>
-  </view>
- <!--超可爱的-END--> 
+    </view>
+</view>
+<!-- <view class='content-box'>
+    <view class='content' wx:for="{{content}}" wx:key="index">
+      <navigator url="{{item.url}}" hover-class='none' >
+        <image class='conImg' src='{{item.img}}' style='background:{{item.bgc}}'></image>
+       <view class='conName'>{{item.name}}</view>
+      </navigator>
+    </view>
+</view> -->
+ <!--卡片-END--> 
 </view>

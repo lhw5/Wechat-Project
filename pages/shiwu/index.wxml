@@ -1,0 +1,71 @@
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+ 
+<!--丢失的物品-->
+<view hidden="{{currentTab!==0}}">
+<!-- 物品栏 -->
+ <view>
+  <view class="cards" wx:for="{{items}}" wx:for-item="item" wx:key="item">
+	<navigator class="nav" url="{{item.url}}" >
+	      	<!-- 左侧图片 -->
+          <view class="card card-url">
+            <image src="{{item.img}}" mode="widthFix"></image>
+          </view>
+          <!-- 右侧文本区域 -->
+          <view class=" card card-text">
+            <view class="card-title">{{item.title}}</view>
+          </view>
+          <view class=" card">
+            <view class="card-desc">{{item.desc}}</view>
+          </view>
+          <!-- 文本区 -->
+          <view class=" card">
+            <view class="card-wenben">{{item.wenben}}</view>
+          </view>
+      <!-- 丢失图片区 -->
+      <view class="card card-tupian">
+        <image src="{{item.tupian}}" mode="widthFix"></image>
+      </view>
+	</navigator>
+</view>
+ </view> 
+
+
+</view>
+ 
+<!--捡到的物品-->
+<view hidden="{{currentTab!==1}}">
+ <view>
+    <view class="cards" wx:for="{{items2}}" wx:for-item="item" wx:key="item">
+	<navigator class="nav" url="{{item.url}}" >
+		<!-- 左侧图片 -->
+		<view class="card card-url">
+			<image src="{{item.img}}" mode="widthFix"></image>
+    </view>
+		<!-- 右侧文本区域 -->
+		<view class=" card card-text">
+			<view class="card-title">{{item.title}}</view>
+    </view>
+    <view class=" card">
+      <view class="card-desc">{{item.desc}}</view>
+    </view>
+    <!-- 文本区 -->
+    <view class=" card">
+      <view class="card-wenben">{{item.wenben}}</view>
+    </view>
+    <!-- 图片 -->
+    <view class="card card-tupian">
+      <image class="hengxian" src="{{item.tupian}}" mode="widthFix"></image>
+    </view>
+	</navigator>
+</view>
+ </view> 
+</view>
+
+<!-- 发布通缉 -->
+<view hidden="{{currentTab!==2}}">
+ 
+</view>
+ 
+

@@ -3,34 +3,34 @@ Page({
 
   data: {
     items:[{
-      'url':'/pages/test/index',
-      'img':'/pages/images/路飞.jpg',
-      'title':'学考专题 ',
-      'desc':'2021广东机电职业技术学院招生简章'
+      'url':'/pages/find/xxgk/index',
+      'img':'/pages/images/1.png',
+      'title':'学校概况',
+      'desc':'国家“双高”计划建设单位、国家优质高职院校、国家示范性职业教育集团培育单位牵头单位、省一流高职院校建设单位、省示范性高职院校'
     },
     {
-      'url':'https://mp.weixin.qq.com/s/CDb2UU9omfZUWMFQWuHkOw',
-      'img':'/pages/images/banner1.jpg',
-      'title':'aasdd',
-      'desc':'wfrh'
+      'url':'/pages/find/jxdw/index',
+      'img':'/pages/images/2.png',
+      'title':'教学单位',
+      'desc':'先进制造技术学院、计算机与设计学院、电子与通信学院、汽车学院、物流学院、经济贸易学院、外语学院'
     },
     {
-      'url':'https://mp.weixin.qq.com/s/CDb2UU9omfZUWMFQWuHkOw',
-      'img':'/pages/images/banner1.jpg',
-      'title':'aasdd',
-      'desc':'wfrh'
+      'url':'/pages/find/jwglxt/index',
+      'img':'/pages/images/4.png',
+      'title':'教学管理',
+      'desc':'教务处 教务管理系统 定岗实习平台'
     },  
     {
       'url':'https://mp.weixin.qq.com/s/CDb2UU9omfZUWMFQWuHkOw',
-      'img':'/pages/images/banner1.jpg',
-      'title':'aasdd',
-      'desc':'wfrh'
+      'img':'/pages/images/3.png',
+      'title':'招生就业',
+      'desc':'招生信息 就业信息'
     },  
     {
       'url':'https://mp.weixin.qq.com/s/CDb2UU9omfZUWMFQWuHkOw',
-      'img':'/pages/images/banner1.jpg',
-      'title':'aasdd',
-      'desc':'wfrh'
+      'img':'/pages/images/5.png',
+      'title':'新闻中心',
+      'desc':'学校要闻 校园快讯 通知公告 媒体关注 高职咨询 科研动态'
     },  
     ]
   },
