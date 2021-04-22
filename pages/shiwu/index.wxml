@@ -27,15 +27,53 @@
       <view class="card card-tupian">
         <image src="{{item.tupian}}" mode="widthFix"></image>
       </view>
+      <view class="card">
+        <view class='card-time'>{{item.time}}<text>1111</text><image src="/pages/images/ll.png"></image></view>
+      </view>
 	</navigator>
 </view>
  </view> 
+</view>
 
+<!-- 发布通缉 -->
+<view hidden="{{currentTab!==1}}">
+<view class="addMain">
+<form bindsubmit="formSubmit">
+  <input type="text" name="longitude" value="{{longitude}}" hidden="true"></input>
+  <input type="text" name="latitude" value="{{latitude}}" hidden="true"></input>
+  <input type="text" name="address" value="{{address}}" hidden="true"></input>
+  <view class="xuanBtn">
+    <button class="{{isChecked?'is_checked':'diuBtn'}}" bindtap="diushi">丢了东西</button>
+    <view class="xuanLine"></view>
+    <button class="{{isChecksd?'is_checksd':'jianBtn'}}" bindtap="jiandao">捡到东西</button>
+  </view>
+
+  <!-- 获取发布位置 -->
+  <view class='getGps' bindtap="clearGps">
+      <image src="./images/map.png" class="mapIco" mode="widthFix"></image>
+      <label>当前位置</label><text>{{address}}</text>
+  </view>
+  <view class="mbInput">
+    <!--物品描述+图片上传-->
+    <view class="miaoshu">
+      <textarea placeholder="对物品的描述" class="section" maxlength="100" name="content" value='{{indexcontent}}' />
+      <view bindtap="checkimg">
+        <image wx:for="{{imglist}}" class="uploadPics" mode="aspectFill" src="{{item}}" wx:key="index"></image>
+        <image src="./images/upic.png" class="uploadPic" mode="widthFix"></image>
+      </view>
+    </view>
+  </view>
+
+  <view class="mbBtn">
+    <button class="vBtn_ok" formType="submit" loading="{{loading}}" disabled="{{disabled}}">提交发布</button>
+  </view>
+</form>
 
 </view>
- 
+</view>
+
 <!--捡到的物品-->
-<view hidden="{{currentTab!==1}}">
+<view hidden="{{currentTab!==2}}">
  <view>
     <view class="cards" wx:for="{{items2}}" wx:for-item="item" wx:key="item">
 	<navigator class="nav" url="{{item.url}}" >
@@ -56,16 +94,14 @@
     </view>
     <!-- 图片 -->
     <view class="card card-tupian">
-      <image class="hengxian" src="{{item.tupian}}" mode="widthFix"></image>
+      <image src="{{item.tupian}}" mode="widthFix"></image>
     </view>
+    <view class="card">
+        <view class='card-time'>{{item.time}}<text>1111</text><image src="/pages/images/ll.png"></image></view>
+      </view>
 	</navigator>
 </view>
  </view> 
-</view>
-
-<!-- 发布通缉 -->
-<view hidden="{{currentTab!==2}}">
- 
 </view>
  
 

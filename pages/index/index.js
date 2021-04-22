@@ -33,9 +33,9 @@ Page({
         'bgc': '#c883f6'
       },
       {
-        'name': '匿名表白',
+        'name': '表白墙',
         'icon': '/pages/images/nmbb.png',
-        'url': '/pages/test/index',
+        'url': '/pages/biaobai/index',
         'bgc': '#DA70A0'
       },
       {

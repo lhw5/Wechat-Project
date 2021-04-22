@@ -11,6 +11,7 @@
     "pages/find/jxdw/index",
     "pages/login/index",
     "pages/shiwu/index",
+    "pages/biaobai/index",
     "pages/find/jwglxt/index"
   ],
   "window": {
