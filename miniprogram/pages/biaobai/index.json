@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "表白墙",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true
+}

@@ -1,0 +1,36 @@
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique"
+    bindtap="navbarTap">{{item}}</text>
+</view>
+
+<!--表白墙-->
+<view hidden="{{currentTab!==0}}">
+  <view class="content-box">
+    <view class="box" wx:for="{{datalist}}" wx:key="index">
+      <image src="{{item.imgUrl}}" />
+      <view>{{item.content}}</view>
+      <text>{{item.date}}</text>
+    </view>
+  </view>
+</view>
+
+<!-- 发布 -->
+<view hidden="{{currentTab!==1}}">
+  <form bindsubmit="submit">
+    <textarea  maxlength="20" name="content" placeholder="请输入表白内容，不多于20字"> 
+    </textarea>
+    <view class="img">
+        <block wx:for="{{tempImg}}" wx:key="index">
+          <image src='{{item}}' mode='aspectFill'></image>
+        </block>
+    </view>
+    <button type="warning" bindtap='uploadImgHandle'>上传图片</button>
+    <button type="primary" form-type="submit" bindtap="submit">提交发布</button>
+  </form>
+
+</view>
+
+<!--表白管理-->
+<view hidden="{{currentTab!==2}}">
+
+</view>

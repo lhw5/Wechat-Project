@@ -1,0 +1,68 @@
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique"
+    bindtap="navbarTap">{{item}}</text>
+</view>
+
+<!--丢失的物品-->
+<view hidden="{{currentTab!==0}}">
+  <view>
+    <view class="content-box">
+      <view class="box" wx:for="{{datalist}}" wx:key="index">
+        <image src="{{item.imgUrl}}" />
+        <view>{{item.content}}</view>
+        <view class="float">
+          <text>{{'联系方式：'+item.phone}}</text>
+          <text>{{item.date}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 发布通缉 -->
+<view hidden="{{currentTab!==1}}">
+
+  <view class="addMain">
+    <form bindsubmit="submit">
+      <view class="xuanBtn">
+        <button class="{{isChecked?'is_checked':'diuBtn'}}" bindtap="diushi">丢了东西</button>
+        <view class="xuanLine"></view>
+        <button class="{{isChecksd?'is_checksd':'jianBtn'}}" bindtap="jiandao">捡到东西</button>
+      </view>
+      <view class="mbInput">
+        <!--物品描述+图片上传-->
+        <view class="miaoshu">
+          <textarea placeholder="对物品的描述" maxlength="25" name="content" value='{{item.content}}' />
+          <input type="text" name="phone" placeholder="联系方式"/>
+          <view bindtap="uploadImgHandle">
+            <image wx:for="{{tempImg}}" class="uploadPics" mode="aspectFill" src="{{item}}" wx:key="index"></image>
+            <image src="./images/upic.png" class="uploadPic" mode="widthFix"></image>
+         </view>
+    </view>
+  </view>
+
+  <view class="mbBtn">
+    <button class="vBtn_ok btn1" form-type="submit" bindtap="submit">发布失物招领</button>
+  </view>
+</form>
+
+  </view>
+
+</view>
+
+<!--捡到的物品-->
+<view hidden="{{currentTab!==2}}">
+  <view>
+    <view class="content-box">
+      <view class="box" wx:for="{{datalist1}}" wx:key="index">
+        <image src="{{item.imgUrl}}" />
+        <view>{{item.content}}</view>
+        <view class="float">
+          <text>{{'联系方式：'+item.phone}}</text>
+          <text>{{item.date}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+ 

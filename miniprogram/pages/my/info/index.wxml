@@ -1,0 +1,51 @@
+<view class="view_contain">
+  <!-- 第一部分 -->
+  <view class="view_1">
+    <view class="view_image_text">
+      <view class="image_radius">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </view>
+  </view>
+
+  <!-- 第二部分 -->
+  <view class="view_2">
+    <view class="list-item">
+      <text class="item-text">姓名</text>
+      <text class="item-text-r">Havel</text>
+    </view>
+    <view class="line"></view>
+    <view class="list-item">
+      <text class="item-text">学号</text>
+      <text class="item-text-r">20211001</text>
+    </view>
+    <view class="line"></view>
+    <view class="list-item">
+      <text class="item-text">性别</text>
+      <text class="item-text-r">男</text>
+    </view>
+    <view class="line"></view>
+  <view class="list-item">
+    <text class="item-text">校区</text>
+    <text class="item-text-r">北校区</text>
+  </view>
+  <view class="line"></view>
+  <view class="list-item">
+    <text class="item-text">学院</text>
+    <text class="item-text-r">计算机与设计学院</text>
+  </view>
+  <view class="line"></view>
+  <view class="list-item">
+    <text class="item-text">专业</text>
+    <text class="item-text-r">软件技术</text>
+  </view>
+  <view class="line"></view>
+  <view class="list-item">
+    <text class="item-text">班级</text>
+    <text class="item-text-r">软件2021</text>
+  </view>
+  <view class="line"></view>
+</view>
+
+</view>

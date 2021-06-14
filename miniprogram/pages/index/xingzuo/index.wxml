@@ -1,0 +1,21 @@
+<view class='content-box'>
+    <view class='content hover' wx:for="{{content}}" bindtap="{{item.bindtap}}" wx:key="index">
+       <image class='conImg' src='{{item.img}}'/>
+       <view class='conName'>{{item.name}}</view>
+       <view class="date">{{item.date}}</view>
+    </view>
+
+    <view class="box">
+        <view>{{type_1}}{{comprehensive}}</view>
+        <view>{{type_2}}{{love}}</view>
+        <view>{{type_3}}{{work}}</view>
+        <view>{{type_4}}{{fortune}}</view>
+        <view>{{type_5}}{{healthy}}</view>
+        <view>{{type_6}}{{luckyColor}}</view>
+        <view>{{type_7}}{{luckyNumber}}</view>
+        <view>{{type_8}}{{NobleMan}}</view>
+        <view>{{type_9}}{{summary}}</view>
+    </view>
+</view>
+
+

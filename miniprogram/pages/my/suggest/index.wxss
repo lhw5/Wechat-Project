@@ -1,0 +1,39 @@
+.conts{
+  width: 100%;
+  height: auto;
+  border: 1rpx soldi #FF5722;
+  margin-top: 30rpx;
+}
+.areas{
+  width: 98%;
+  height:234rpx;
+  font-size: 30rpx;
+  text-indent: 10rpx;
+  border: 1rpx solid gainsboro;
+  padding-top: 30rpx;
+  margin: 0 auto;
+  overflow: hidden;   
+  position: relative; 
+}
+.currentWordNumber{
+  font-size: 28rpx;
+  color: gray;
+  position: absolute;
+  left: 600rpx;
+  top: 5rpx;
+}
+.hint{
+   font-size: 28rpx;
+   position: absolute;
+   top: 200rpx;
+   left: 30rpx;
+   color: #2196F3;
+}
+.submit{
+  width: 80%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color:#3dabf5;
+  color: #fff;
+  margin-top: 35px; 
+}

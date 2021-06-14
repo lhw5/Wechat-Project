@@ -1,0 +1,29 @@
+<view class="cards" wx:for="{{items}}" wx:for-item="item" wx:key="item">
+	<navigator class="nav" url="{{item.url}}" >
+		<!-- 左侧图片 -->
+		<view class="card card-url">
+			<image src="{{item.img}}" mode="widthFix"></image>
+    </view>
+		<!-- 右侧文本区域 -->
+		<view class=" card card-text">
+			<view class="card-title">{{item.title}}</view>
+			<view class="card-desc">{{item.desc}}</view>
+			<!-- 下方浏览等数据 -->
+			<view class="card-bottom">
+				<view>
+					<image src="/pages/images/ll.png"></image>
+					<text>1314</text>
+				</view>
+				<view>
+					<image src="/pages/images/dz.png"></image>
+					<text>520</text>
+				</view>
+				<view>
+					<image src="/pages/images/zf.png"></image>
+					<text>888</text>
+				</view>
+			</view>
+    </view>
+	</navigator>
+</view>
+

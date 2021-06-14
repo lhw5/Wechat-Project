@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "闲置二手",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true
+}

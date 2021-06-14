@@ -1,0 +1,159 @@
+page{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #F5F5F5;
+  line-height: 1.6;
+}
+.navbar{
+  flex: none;
+  display: flex;
+  background: #fff;
+}
+.navbar .item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+}
+.navbar .item.active{
+  color: #c3d6ff;
+}
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: #c3d6ff;
+}
+
+/* 图片上传加物品描述 */
+.mbInput{
+  background: #fff;
+  width: 90%;
+  padding: 0 5%;
+  border-top: 2rpx #ECECEC solid;
+  border-bottom: 2rpx #ECECEC solid;
+}
+
+
+.tels{
+  border-bottom: 2rpx #F5F5F5 solid; padding: 25rpx 0
+}
+
+
+.mbBtn{ width: 90%; margin: 40rpx auto 0}
+
+.mbBtn button::after {
+  border:0;
+}
+
+.mbBtn .vBtn_ok{
+   border: 0; background: #3dabf5; color: #fff;
+   margin-top: 30rpx; margin-bottom: 20rpx; border-radius: 100rpx
+}
+
+.xuanBtn{
+  display: flex;
+  flex-direction: row;
+  padding: 0 40rpx
+}
+.diuBtn{
+  flex: 6; background: #30201262;
+  height: 120rpx; line-height: 120rpx; border-radius:0rpx;
+}
+.is_checked{  
+  flex: 6; background: #70f575c4;
+  height: 120rpx; line-height: 120rpx; border-radius:0px; color: #fff
+}  
+.jianBtn{
+  flex: 6; background: #30201262;
+  height: 120rpx; line-height: 120rpx; border-radius:0px;
+}
+.is_checksd{  
+  flex: 6; background: #4be046;
+  height: 120rpx; line-height: 120rpx; border-radius:0px; color: #fff
+}  
+.xuanLine{
+  flex: 1;
+  height: 120rpx;
+}
+.xuanBtn button::after {
+  border-radius:0px;
+}
+
+.uploadPic{ width: 20%; margin-right: 20rpx}
+.uploadPics{ width: 20%; height: 130rpx; margin-right: 20rpx;}
+.miaoshu{ padding-bottom: 20rpx}
+
+.box{
+  float: left;
+  width: 96%;
+  height: 300rpx;
+  background: rgba(0, 0, 0, 0.01);
+  margin: 10rpx 5rpx 0rpx 5rpx;
+  padding: 5rpx 8rpx;
+  border: 2rpx solid #fff;
+  border-radius: 20rpx;
+  box-shadow:1rpx 1rpx rgba(102, 102, 102, 0.555);
+}
+.box image{
+  margin: 1rpx 1rpx;
+  width: 98%;
+  height: 185rpx;
+}
+.box view{
+  display: block;
+  font-size: 25rpx;
+  color: #713de9;
+}
+
+.float text:nth-child(1){
+  float: left;
+  padding-top: 10rpx;
+  font-size: 18rpx;
+  color: #fa0cda;
+}
+.float text:nth-child(2) {
+  float: right;
+  padding-top: 28rpx;
+  font-size: 15rpx;
+  color: #fa7508;
+}
+form textarea{
+  width: 96%;
+  height: 175rpx;
+  background-color: aliceblue;
+  color: rgb(236, 149, 34);
+  margin: 20rpx auto;
+  padding: 10rpx 10rpx;
+  border: 1px solid rgba(48, 26, 247, 0.726);
+}
+form input{
+  width: 98%;
+  color: rgb(99, 21, 245);
+  margin-bottom: 10rpx;
+  padding-left: 10rpx;
+  background-color: aliceblue;
+  border: 1px solid rgba(48, 26, 247, 0.726);
+}
+.xx{
+  margin-left: 20rpx;
+  color: lightskyblue;
+}
+form button{
+  width: 45%;
+  color: #fff;
+  margin-top: 20rpx;
+  background-color: #3dabf5;
+}
+
+.img image{
+  margin: 10rpx 40rpx 10rpx 40rpx;
+}
+
+
+

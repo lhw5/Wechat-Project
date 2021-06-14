@@ -1,0 +1,26 @@
+.cont{
+  width: 80%;
+  margin: 40rpx;
+  padding: 40rpx;
+  background:rgba(57,102, 255,1);
+  border-radius: 20rpx;
+  color: #fff;
+  font-size: 30rpx;
+}
+.change{
+  background: linear-gradient(rgb(299,175,250),rgb(88,122,235)45%,rgb(227,174,248));
+  width: 90%;
+  height: 90rpx;
+  border-radius: 20rpx;
+  margin-top: 400rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+}
+.change image{
+  width: 45rpx;
+  height: 45rpx;
+  margin: 0 20rpx;
+}

@@ -1,0 +1,29 @@
+<view class="container">
+<form bindsubmit="formsubmit"> 
+<view class="login-icon"> 
+<image class="login-img" name="avatarUrl" src="{{avatarUrl}}" bindtap="getUserProfile"/>
+<input type="text"  name="nickName" value="{{nickName}}" placeholder="获取微信账号信息"/>
+</view> 
+<view class="login-from"> 
+<!--账号-->
+<view class="inputView"> 
+ <image class="nameImage" src="/pages/login/image/zh.png"></image> 
+ <label class="loginLab">账号︱</label> 
+ <input type="text" class="inputText" name="username" bindinput="usernameInput" placeholder="请输入账号" /> 
+</view> 
+<view class="line"></view> 
+<!--密码-->
+<view class="inputView"> 
+ <image class="keyImage" src="/pages/login/image/mm.png"></image> 
+ <label class="loginLab">密码︱</label> 
+ <input type="text" class="inputText" name="password" bindinput="passwordInput" placeholder="请输入密码" password/> 
+</view> 
+<!--按钮-->
+<view class="loginBtnView"> 
+ <button class="loginBtn" form-type="submit" bindtap="login">微信绑定登录</button> 
+ <button class="loginBtn"  bindtap="register">注册</button> 
+</view> 
+
+</view> 
+</form>
+</view>

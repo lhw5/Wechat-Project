@@ -1,0 +1,46 @@
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique"
+    bindtap="navbarTap">{{item}}</text>
+</view>
+
+<!--表白墙-->
+<view hidden="{{currentTab!==0}}">
+  <view class="content-box">
+    <view class="box" wx:for="{{datalist}}" wx:key="index">
+      <image src="{{item.imgUrl}}" />
+      <view>{{item.content}}</view>
+      <view class="price">{{item.price+'￥'}}</view>
+      <view class="float">
+        <text>{{'联系方式:'+item.phone}}</text>
+        <text>{{item.date}}</text>
+      </view>
+      
+    </view>
+  </view>
+</view>
+
+<!-- 发布 -->
+<view hidden="{{currentTab!==1}}">
+  <form bindsubmit="submit">
+    <textarea  maxlength="16" name="content" placeholder="物品描述，不多于16字"> 
+    </textarea>
+    <view class="xx">
+      <label>价格￥:<input type="text" name="price" placeholder="默认￥,请输入数字即可"/></label> 
+      <label>联系方式:<input type="text" name="phone" placeholder="如 wx:123456789"/></label> 
+    </view>
+    
+    <view class="img">
+        <block wx:for="{{tempImg}}" wx:key="index">
+          <image src='{{item}}' mode='aspectFill'></image>
+        </block>
+    </view>
+    <button type="warning" bindtap='uploadImgHandle'>上传图片</button>
+    <button type="primary" form-type="submit" bindtap="submit">提交发布</button>
+  </form>
+
+</view>
+
+<!--表白管理-->
+<view hidden="{{currentTab!==2}}">
+
+</view>

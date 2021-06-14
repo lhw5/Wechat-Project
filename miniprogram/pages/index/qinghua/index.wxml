@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="cont" wx:for="{{list}}"wx:if="{{index<1}}" wx:key="index">
+    <text>{{item}}</text>
+  </view>
+  <view class="change" bindtap="onLoad">
+    <image src="/pages/images/qiehuan.png"></image>
+    <text>换一个</text>
+  </view>
+</view>

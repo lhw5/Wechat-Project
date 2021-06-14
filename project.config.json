@@ -1,4 +1,6 @@
 {
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
   "description": "项目配置文件",
   "packOptions": {
     "ignore": []
@@ -6,7 +8,7 @@
   "setting": {
     "urlCheck": false,
     "es6": true,
-    "enhance": false,
+    "enhance": true,
     "postcss": true,
     "preloadBackgroundData": false,
     "minified": true,
@@ -40,7 +42,7 @@
     "minifyWXSS": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.16.0",
+  "libVersion": "2.17.3",
   "appid": "wx8bef09f169cc60dd",
   "projectname": "%E6%9C%BA%E7%94%B5%E5%B0%8F%E5%8A%A9%E6%89%8B",
   "debugOptions": {
