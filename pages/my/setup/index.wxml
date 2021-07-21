@@ -1,2 +1,0 @@
-<button bindtap="clean">清除缓存</button>
-<button bindtap="cancel">取消绑定</button>

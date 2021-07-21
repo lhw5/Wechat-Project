@@ -11,37 +11,7 @@
       "list": []
     },
     "miniprogram": {
-      "list": [
-        {
-          "name": "pages/shiwu/index",
-          "pathName": "pages/shiwu/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/sell/index",
-          "pathName": "pages/sell/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/biaobai/index",
-          "pathName": "pages/biaobai/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/index/index",
-          "pathName": "pages/index/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/login/index",
-          "pathName": "pages/login/index",
-          "scene": null
-        }
-      ]
+      "list": []
     }
   }
 }

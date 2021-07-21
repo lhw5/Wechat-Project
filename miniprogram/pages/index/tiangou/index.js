@@ -6,7 +6,7 @@ Page({
     datalist:[]
   },
   onLoad: function (options) {
-    db.collection('tiangou').aggregate().sample({size:1}).end().then(
+    db.collection('tiangou').aggregate().sample({size:3}).end().then(
       res=>{
         console.log(res.list[0].data);
         console.log(res.list[0]);

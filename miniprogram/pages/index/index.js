@@ -45,9 +45,9 @@ Page({
         'bgc': '#f5c664'
       },
       {
-        'name': '校园一卡通',
+        'name': '吐槽墙',
         'icon': '/pages/images/ykt.png',
-        'url': '/pages/test/index',
+        'url': '/pages/吐槽墙/index',
         'bgc': '#95B1FA'
       },
       {
@@ -59,7 +59,7 @@ Page({
       {
         'name': '宣传活动',
         'icon': '/pages/images/xchd.png',
-        'url': '/pages/test/index',
+        'url': '/pages/宣传/index',
         'bgc': '#ed91f4'
       },
       {

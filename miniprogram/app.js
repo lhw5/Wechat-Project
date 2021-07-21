@@ -7,7 +7,7 @@ App({
     wx.setStorageSync('logs', logs)
 
     wx.cloud.init({
-      env:'cloud1-0ghc24yocefc0cb0',
+      env:'lhw-3g82anuu31f2186f',
       traceUser: true,
     })
     wx.showShareMenu({

@@ -131,6 +131,8 @@ Page({
   },
 
   onLoad() {
+  
+
     var that = this
     const db = wx.cloud.database()
     db.collection('biaobaiqiang').get({
